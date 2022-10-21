@@ -1,7 +1,7 @@
 const data = [
   {
     date:'April 25, 2017',
-    title:'AND THIS IS A MASSIVE HEADLINE',
+    title:'1 HEAD AND THIS IS A MASSIVE HEADLINE',
     paragraph:'Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.',
     imgUrl:'/img/pic01.jpg',
   },
@@ -43,7 +43,7 @@ const data = [
   },
   {
     date:'April 25, 2017',
-    title:'AND THIS IS A MASSIVE HEADLINE',
+    title:'HEAD AND THIS IS A MASSIVE HEADLINE',
     paragraph:'Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.',
     imgUrl:'/img/pic01.jpg',
   },

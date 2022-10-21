@@ -14,7 +14,6 @@ html{
 .container{
   max-width: 1500px;
   margin: 0 auto;
-  background: yellow; 
 }
 .main-page{
   position: relative;
@@ -23,12 +22,11 @@ html{
   box-sizing: border-box;
   padding-top: 200px;
   color: white;
-  height: 90vh;
 }
 .header h1{
   margin: auto;
   font-size: 3.6rem;
-  width: 32rem;
+  max-width: 32rem;
   letter-spacing: 5px;
 }
 .header p{
@@ -58,6 +56,8 @@ html{
 }
 .title-box{
   position: relative;
+  height: 90vh;
+  margin-bottom: 5rem; 
 }
 .logo-box{
   padding-top: 5.6rem;
@@ -133,6 +133,11 @@ html{
   color:var(--point-color);
   border-color: var(--point-color);
 }
+.border-hover:hover{
+  cursor: pointer;
+  color:var(--point-color);
+  border-color: var(--point-color);
+}
 .show-animation{
   animation-duration: 1s;
   animation-name: show;
@@ -146,6 +151,9 @@ html{
 }
 .bor-bottom{
   border-bottom: 2px solid rgba(0,0,0,.1);
+}
+.content-box{
+  background-color: white;
 }
 .post-head{
   padding: 3rem 3rem 6rem;
@@ -174,7 +182,7 @@ html{
   font-weight: 100;
 }
 .post-head img{
-  width: 40rem;
+  max-width: 40rem;
   margin: 0 auto 2.4rem;
 }
 .post-btn{
@@ -203,24 +211,46 @@ html{
   text-align: start;
   font-size: .9rem;
   line-height: 1.5rem;
-  width: 25rem;
+  max-width: 25rem;
   margin: 2rem auto 2.4rem;
 }
 .post-card.left::after{
   content: "";
   position: absolute;
   height: 100%;
-  border: 1px solid rgba(0,0,0,.1);
+  border-left: 2px solid rgba(0,0,0,.1);
   right: 0;
   top: 0;
 }
 .post-card img{
-  width: 25rem;
+  max-width: 17rem;
 }
 .post-head img:hover,.post-card img:hover{
   cursor: pointer;
 }
 
+.page-btn-list{
+  display: inline-block;
+  padding: 3rem;
+}
+.page-btn{
+  float:left;
+  font-weight: bold;
+  font-size: .7rem;
+  border: 3px solid rgba(0,0,0,.1);
+  border-right-color: transparent;
+  margin: 0 -1px;
+  padding: .8rem 1rem;
+}
+.page-btn:last-child{
+  border-right: 3px solid rgba(0,0,0,.1);
+}
+.page-btn:last-child:hover{
+  border-color: var(--point-color);
+}
+.current-page{
+  background-color: rgba(0,0,0,.05);
+}
 @keyframes show {
   0%{
     transform: translateY(40px);
@@ -254,7 +284,7 @@ html{
 .col-md-6{
   width: 50%;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1280px) {
   html{
     font-size: 20px;
   }
