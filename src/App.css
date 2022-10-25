@@ -154,6 +154,7 @@ html{
 }
 .content-box{
   background-color: white;
+  margin-bottom: 2rem;
 }
 .post-head{
   padding: 3rem 3rem 6rem;
@@ -214,7 +215,7 @@ html{
   max-width: 25rem;
   margin: 2rem auto 2.4rem;
 }
-.post-card.left::after{
+.left::after{
   content: "";
   position: absolute;
   height: 100%;
@@ -250,6 +251,41 @@ html{
 }
 .current-page{
   background-color: rgba(0,0,0,.05);
+}
+.contract-box{
+  background-color: rgba(0,0,0,0.05);
+}
+.message-box{
+  padding: 3rem;
+  position: relative;
+  text-align: start;
+}
+.message-box-title{
+  font-size: .8rem;
+  font-weight: bold;
+  color: rgba(0,0,0,.6);
+  margin-bottom: 1rem;
+}
+.message-box-input,.message-box-textarea{
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border: 2px solid rgba(0,0,0,.1);
+  background: transparent;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+.send-btn{
+  display: inline-block;
+  border: 2px solid rgba(0,0,0,.6);
+  color: rgba(0,0,0,.6);
+  font-size: .7rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+.message-box-input:focus,.message-box-textarea:focus{
+  outline: none;
+  border: 2px solid var(--point-color);
 }
 @keyframes show {
   0%{
@@ -301,6 +337,9 @@ html{
   }
   .row{
     flex-wrap:wrap;
+  }
+  .left::after{
+    display: none;
   }
   .col-md-6{
     width: 100%;

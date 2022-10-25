@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Content from './Content'
 import Pagination from './Pagination'
 import data from "../data/contentData";
+import ContractBox from "./ContractBox";
 const ContentBox = () => {
   const [contentPage, setContentPage] = useState(1);
   const [contentData, setContentData] = useState([]);
@@ -17,6 +18,7 @@ const ContentBox = () => {
     <div className='container content-box'>
       <Content contentData={contentData} contentPage = {contentPage}/>
       <Pagination pageLength={Math.ceil(data.length/7)} contentPage={contentPage} setContentPage={setContentPage}/>
+      <ContractBox/>
     </div>
   )
 }

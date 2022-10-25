@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import Tabs from '../components/Tabs'
 import Title from '../components/Title'
 import ContentBox from '../components/ContentBox';
+import Copyright from '../components/Copyright';
 const Main = () => {
   const [title,setTitle] = useState('header');
   window.addEventListener('scroll',(e)=>{
@@ -18,6 +19,7 @@ const Main = () => {
       <Title header={title}/>
       <Tabs />
       <ContentBox />
+      <Copyright />
     </div>
   )
 }

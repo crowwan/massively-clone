@@ -29,7 +29,8 @@ const Pagination = ({pageLength, contentPage, setContentPage}) => {
           return pages;
         })(startPage,lastPage)
       }
-      {lastPage !== pageLength ?
+      {
+        contentPage !== pageLength ?
         <div className='page-btn next transition border-hover' onClick={onClickPage('next')}>NEXT</div>:
         null
       }
