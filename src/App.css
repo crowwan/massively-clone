@@ -314,6 +314,11 @@ html{
 .info:last-child{
   border:none
 }
+.copyright{
+  color: rgba(255,255,255,.4);
+  font-weight: bold;
+  height: 6rem;
+}
 @keyframes show {
   0%{
     transform: translateY(40px);

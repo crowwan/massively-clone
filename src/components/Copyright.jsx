@@ -2,7 +2,7 @@ import React from 'react'
 
 const Copyright = () => {
   return (
-    <div>Copyright</div>
+    <div className='copyright'>&copy; COPYRIGHT</div>
   )
 }
 
